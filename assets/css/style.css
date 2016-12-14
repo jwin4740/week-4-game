@@ -1,28 +1,64 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url("../images/redoak.jpg");
     background-size: cover;
     position: absolute;
     z-index: -1;
-
-
+    font-weight: 900;
+    font-size: 16px;
+    color: black;
 }
 
-.row{
+.container {
+    margin-left: 10px;
+}
+
+.row {
     border: solid 1px black;
+    margin-bottom: 5px;
 }
 
-.col-md-1{
+.col-md-1 {
     margin-right: 5px;
 }
 
-img.gem{
-    width:100px;
+#genNumber {
+    float: left;
     height: 100px;
-    border: solid 1px black;
-    cursor: pointer;
+    width: 205px;
+    border: solid 4px black;
 }
 
+#four {
+    clear: both;
+}
+
+img.gem {
+    float: left;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#five {
+    clear: both;
+}
+
+.totscore {
+    float: left;
+    height: 100px;
+    width: 205px;
+    border: solid 4px black;
+    margin-right: 5px;
+}
+
+.scorebox {
+    float: left;
+    height: 100px;
+    width: 150px;
+    border: solid 4px black;
+}

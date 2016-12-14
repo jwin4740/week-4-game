@@ -1,68 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  
-
-  <!-- Added link to the jQuery Library -->
-  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
-<!-- Added link to the javascript file -->
+    <meta charset="UTF-8">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <!-- Added link to the javascript file -->
     <script src="assets/javascript/game.js"></script>
-
-  <!-- Added a link to Bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-  <!-- <link rel="stylesheet" href=assets/css/reset.css> -->
-
-  <link rel="stylesheet" href="assets/css/style.css">
-<title> JJW Crystal Collector </title>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href=assets/css/reset.css> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> JJW Crystal Collector </title>
 </head>
+
 <body>
     <div class="container">
         <div class="row" id="one">
-        Crystals Collector
+            Crystals Collector
         </div>
         <div class="row" id="two">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <p> Directions </p>
-                <p> Directions </p>
-                <p> Directions </p>
-                <p> Directions </p>
-                <p> Directions </p>
+                <p> * The player will be shown a random number at the start of the game.
+                </p>
+                <p>
+                    * When the player clicks on a crystal, it will add a specific amount of points to the player's total score. * Your game will hide this amount until the player clicks a crystal. * When they do click one, update the player's score counter.
+                </p>
+               
             </div>
         </div>
-
         <div class="row" id="three">
-            <div class="col-md-3">
-                    <img class="gem" alt="colored-gem" src="assets/images/red.jpg">
-                </div>
-                <div class="col-md-1">
-                    <img class="gem" alt="colored-gem" src="assets/images/purple.jpg">
-                </div>
+            <div id="genNumber">
+            </div>
         </div>
-        
         <div class="row" id="four">
-            <div class="col-md-1">
-                <img class="gem" alt="colored-gem" src="assets/images/blue.jpg">
-            </div>
-            <div class="col-md-1">
-                <img class="gem" alt="colored-gem" src="assets/images/green.jpg">
-            </div>
-            <div class="col-md-1">
-                <img class="gem" alt="colored-gem" src="assets/images/red.jpg">
-            </div>
-            <div class="col-md-1">
-                <img class="gem" alt="colored-gem" src="assets/images/purple.jpg">
-            </div>
+            <img class="gem" id="blue" alt="colored-gem" src="assets/images/blue.png">
+            <img class="gem" id="green" alt="colored-gem" src="assets/images/green.png">
+            <img class="gem" id="red" alt="colored-gem" src="assets/images/red.png">
+            <img class="gem" id="purple" alt="colored-gem" src="assets/images/purple.png">
         </div>
         <div class="row" id="five">
-            <div class="col-md-3">
-            Your total score is
+            <div class="totscore">
+                <h4 style="padding: 2px;text-align: center; text-decoration: underline;"> Your total score is</h4>
+            </div>
+            <div class="scorebox">
+                <h4> &nbsp; WINS: &nbsp; <span id="wins"></span></h4>
+                <h4> &nbsp; LOSSES: &nbsp;<span id="wins"></span></h4>   
             </div>
         </div>
     </div>
 </body>
+
 </html>
-
-
-  
