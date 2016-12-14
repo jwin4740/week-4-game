@@ -66,5 +66,36 @@ img.gem {
 .sparkle{
     width: 100px;
     height: 100px;
+}
 
+#sparkle1{
+    position: absolute;
+    z-index: 2;
+    top: 320px;
+    left: 250px;
+    opacity: 0.9;
+}
+
+#sparkle2{
+    position: absolute;
+    z-index: 2;
+    top: 335px;
+    left: 220px;
+    opacity: 0.9;
+}
+
+#sparkle3{
+    position: absolute;
+    z-index: 2;
+    top: 350px;
+    left: 250px;
+    opacity: 0.9;
+}
+
+#sparkle4{
+    position: absolute;
+    z-index: 2;
+    top: 315px;
+    left: 215px;
+    opacity: 0.9;
 }
