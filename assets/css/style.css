@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../images/redoak.jpg");
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+
+
+}
+
+.row{
+    border: solid 1px black;
+}
+
+.col-md-1{
+    margin-right: 5px;
+}
+
+img.gem{
+    width:100px;
+    height: 100px;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
