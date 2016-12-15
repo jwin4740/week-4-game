@@ -42,8 +42,20 @@ img.gem {
     height: 100px;
     cursor: pointer;
     margin-right: 5px;
+  
+  -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 10s; 
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 10s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear; 
+ 
 }
-
+   
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
 #five {
     clear: both;
 }
