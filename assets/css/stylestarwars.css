@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("../images/redoak.jpg");
+    background-image: url("../images/setting.png");
     background-size: cover;
     position: absolute;
     z-index: -1;
@@ -59,24 +59,10 @@ img.gem {
 }*/
 
 .obiwan{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }
-.reds{  
-  -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 10s; 
-    -webkit-animation-name: rotate; 
-    -webkit-animation-duration: 5s; 
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear; 
- 
-}
-   
-@-webkit-keyframes rotate {
-    from {-webkit-transform: rotateZ(0deg);}
-    to {-webkit-transform: rotateZ(360deg);}
-    
-}
+
 
 #five {
     clear: both;
