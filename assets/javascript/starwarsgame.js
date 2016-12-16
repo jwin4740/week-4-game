@@ -5,6 +5,13 @@ function fIntro() {
     intro.play();
 }
 // fIntro();
+
+var intro2 = document.getElementById("theme2");
+
+function fIntro2() {
+    intro2.play();
+}
+fIntro2();
 document.onkeyup = function(event) {
     var userKey = event.key;
     if (userKey === "d") {
@@ -37,7 +44,19 @@ $( "#arenabuttonout" ).on( "click", function() {
   $( "#arena" ).fadeOut( 1000 );
 });
 
+ 
+    
+  
+$( "#go" ).click(function() {
+  $( ".lightsaber" ).animate({
+    height: "180px",
 
+  }, 1500 );
+  $( ".lightsaber" ).css({
+    border: "solid 4px green",
+      
+  }, 1500 );
+ });
 
 $(document).keyup(function(e) {
         switch (e.which) {
@@ -66,6 +85,8 @@ $(document).keyup(function(e) {
           
         }
   });
+
+
 var audio = document.getElementById("theme");
 
 function lessVolume() {
