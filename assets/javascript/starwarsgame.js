@@ -28,9 +28,58 @@ document.onkeyup = function(event) {
     }
 
 };
+// fade arena in and out
+$( "#arenabuttonin" ).on( "click", function() {
+  $( "#arena:hidden:first" ).fadeIn( 2000 );
+});
 
+$( "#arenabuttonout" ).on( "click", function() {
+  $( "#arena" ).fadeOut( 1000 );
+});
 
+$(document).on("keypress", function(event) {
+	if (event.key === "l")
+	{
+		$("img.obiwan").animate({ left: "-=5px" }, 200, "linear");
+    } 
 
+    else
+    {
+    	return;
+    }  	
+});
+$(document).keyup(function(e) {
+        switch (e.which) {
+          case 40:
+            $("img.obiwan").animate({ bottom: "-=30px" }, "normal");
+          break;
+
+          case 38:
+            $("img.obiwan").animate({ top: "-=30px" }, "normal");
+            break;
+        }
+  });
+
+// $(document).keyup(function(e) {
+//         switch (e.which) {
+//           case 38:
+//             $("img.obiwan").animate({ top: "-=30px" }, "normal");
+//         }
+//   });
+
+$(document).keyup(function(e) {
+        switch (e.which) {
+          case 37:
+            $("img.obiwan").animate({ left: "-=30px" }, "normal");
+        }
+  });
+
+$(document).keyup(function(e) {
+        switch (e.which) {
+          case 39:
+            $("img.obiwan").animate({ right: "-=30px" }, "normal");
+        }
+  });
 
 var audio = document.getElementById("theme");
 

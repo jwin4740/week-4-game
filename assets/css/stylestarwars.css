@@ -16,6 +16,24 @@ body {
     margin-left: 10px;
 }
 
+#arena{
+    /*display: none;*/
+    overflow: hidden;
+    background-image: url(../images/setting.png);
+    background-size: cover;
+    border: solid 5px white;
+    position: absolute; 
+    top: 20px; 
+    left: 175px; 
+    width: 1000px; 
+    height: 600px;
+}
+    img.obiwan{
+        position: relative;
+        height: 200px;
+        width: 200px;
+    }
+
 .row {
     border: solid 1px black;
     margin-bottom: 5px;
