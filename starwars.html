@@ -3,31 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Added link to the jQuery Library -->
     <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
-    <!-- Added link to the javascript file -->
-    <script src="assets/javascript/starwarsgame.js"></script>
+    
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href=assets/css/reset.css> -->
     <link rel="stylesheet" href="assets/css/stylestarwars.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
     <title> STAR WARS </title>
 </head>
 
 <body>
-
-<!-- <audio  autoplay loop>
-    <source src="assets/av/saberduelcut.mp3" type="audio/mp3">
-</audio> -->
+    <audio loop controls id="theme">
+        <source src="assets/av/imperialmarch.mp3" type="audio/mp3">
+    </audio>
+    <audio id="saberdraw" src="assets/av/saberdraw.mp3">
+    </audio>
+    <audio loop id="saberbuzz" src="assets/av/saberbuzz.mp3">
+    </audio>
+    <audio loop id="sabersbuzz" src="assets/av/saberbuzz.mp3">
+    </audio>
+    <audio id="sabercontact" src="assets/av/sabercontact.mp3">
+    </audio>
+    <audio id="sabersheath" src="assets/av/sabersheath.mp3">
+    </audio>
+    <div id="kenobidiv" style="border: solid 5px white;position:absolute; top:25px; left: 700px; z-index: -20; width: 623px; height: 700px;">
+        <img class="obiwan" id="blue" alt="colored-gem" src="assets/images/obiwan.png" style="position: relative;">
+    </div>
+    <div class="right"></div>
+    <button class="bread">animate</button>
     
-        <p id="kenobidiv" style="border: solid 3px black;position:absolute; top:50px; left: 80px; z-index: -20; width: 400px; height: 300px;">
-            <img class="obiwan" id="blue" alt="colored-gem" src="assets/images/obiwan.png" style="position:absolute;">
-        </p>>
 
-
-
-                
+      
+<script src="assets/javascript/starwarsgame.js"></script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("../images/setting.png");
+    background-image: url("../images/mainspace.jpg");
     background-size: cover;
     position: absolute;
     z-index: -1;
@@ -63,7 +63,12 @@ img.gem {
     height: 400px;
 }
 
-
+.right{
+    position: relative;
+   height: 200px;
+   width: 200px;
+   background-color: red;
+}
 #five {
     clear: both;
 }
