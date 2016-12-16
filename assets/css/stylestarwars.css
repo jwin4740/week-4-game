@@ -28,10 +28,22 @@ body {
     width: 1000px; 
     height: 600px;
 }
-    img.obiwan{
-        position: relative;
+
+#obiwan{
+    position: relative;
         height: 200px;
         width: 200px;
+        border: solid 3px white;
+        left: 400px;
+        top: 100px;
+
+}
+    img.obi{
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        bottom: 10px;
+        right: 15px;
     }
 
 .row {
