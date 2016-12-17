@@ -5,7 +5,7 @@ var enemy = true;
 
 
 $(document).ready(function() {
-            // var intro = document.getElementById("theme");
+            // var intro = $("#theme")[0];
 
             // function fIntro() {
             //     intro.play();
@@ -15,7 +15,7 @@ $(document).ready(function() {
             var intro2 = $("#theme2")[0];
 
             function fIntro2() {
-                intro2.play();
+                // intro2.play();
             }
             fIntro2();
             document.onkeyup = function(event) {
@@ -49,9 +49,19 @@ $(document).ready(function() {
             $("#arenabuttonout").on("click", function() {
                 $("#arena").fadeOut(1000);
             });
+function hoverEnlarge(idname){
+             $(idname).on("mouseenter", function() {
+                $(idname).css({height: "275px", width: "275px" });
+            });
+             $(idname).on("mouseleave", function() {
+                $(idname).css({height: "200px", width: "200px" });
+            });
 
-
-
+};
+hoverEnlarge("#qui");
+hoverEnlarge("#darth");
+hoverEnlarge("#obi");
+hoverEnlarge("#count");
 
             $("#go").click(function() {
                 $(".lightsaber").animate({
@@ -93,38 +103,38 @@ $(document).ready(function() {
             });
 
 
-            var audio = document.getElementById("theme");
+            var audio = $("#theme")[0];
 
             function lessVolume() {
                 audio.volume = 0.5;
             }
             lessVolume();
 
-            var draw = document.getElementById("saberdraw");
+            var draw = $("#saberdraw")[0];
 
             function fDraw() {
                 draw.play();
             }
 
-            var buzz = document.getElementById("saberbuzz");
+            var buzz = $("#saberbuzz")[0];
 
             function fBuzz() {
                 buzz.play();
             }
 
-            var sbuzz = document.getElementById("sabersbuzz");
+            var sbuzz = $("#sabersbuzz")[0];
 
             function sBuzz() {
                 sbuzz.play();
             }
 
-            var contact = document.getElementById("sabercontact");
+            var contact = $("#sabercontact")[0];
 
             function fContact() {
                 contact.play();
             }
 
-            var sheath = document.getElementById("sabersheath");
+            var sheath = $("#sabersheath")[0];
 
             function fSheath() {
                 sheath.play();
