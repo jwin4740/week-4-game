@@ -138,165 +138,31 @@ function resetSound() {
 
 }
 
-var obiwanAttack = 5;
+
 
 
 // prototype object
-function character(name, healthPoints, attackPower, counterAttackPower, enemy) {
+function Character(name, healthPoints, attackPower, counterAttackPower) {
 	this.name = name;
 	this.healthPoints = healthPoints;
 	this.attackPower = attackPower;
 	this.counterAttackPower = counterAttackPower;
-	this.enemy = enemy;
+}
+
+var charOne = new Character("ObiwanKenobi", 175, 12, 15);
+var charTwo = new Character("QuigonGinn", 200, 14, 20);
+var charThree = new Character("DarthMaul", 150, 18, 30);
+var charFour = new Character("CountDooku", 250, 16, 25);
+
+function choosePlayer{
+	if ()
 }
 
 
-
-
-var obiWan = {
-
-	healthPoints: 150,
-	attackPower: 5, 
-	counterAttackPower: 100,
-	
-
-	attack: function() {
-
-		this.attackPower = this.attackPower + obiwanAttack;
-		console.log(this.attackPower);
-	}, 
-
-	getHit: function() {
-
-		this.healthPoints = this.healthPoints + obiwanAttack;
-		console.log(this.healthPoints);
-	}, 
-
-	counterPunch: function() {
-
-		this.counterAttackPower = this.counterAttackPower + obiwanAttack;
-		console.log(this.counterAttackPower);
-	}, 
-
-};
-
-
-var quiGon = {
-
-	healthPoints: 150,
-	attackPower: 5, 
-	counterAttackPower: 100,
-	
-
-	attack: function() {
-
-		this.attackPower = this.attackPower + quiGonAttack;
-		console.log(this.attackPower);
-	}, 
-
-	getHit: function() {
-
-		this.healthPoints = this.healthPoints + quiGonAttack;
-		console.log(this.healthPoints);
-	}, 
-
-	counterPunch: function() {
-
-		this.counterAttackPower = this.counterAttackPower + quiGonAttack;
-		console.log(this.counterAttackPower);
-	}, 
-
-};
-
-var darthMaul = {
-
-	healthPoints: 150,
-	attackPower: 5, 
-	counterAttackPower: 100,
-	
-
-	attack: function() {
-
-		this.attackPower = this.attackPower + darthMaulAttack;
-		console.log(this.attackPower);
-	}, 
-
-	getHit: function() {
-
-		this.healthPoints = this.healthPoints + darthMaulAttack;
-		console.log(this.healthPoints);
-	}, 
-
-	counterPunch: function() {
-
-		this.counterAttackPower = this.counterAttackPower + darthMaulAttack;
-		console.log(this.counterAttackPower);
-	}, 
-
-};
-
-var countDooku = {
-
-	healthPoints: 150,
-	attackPower: 5, 
-	counterAttackPower: 100,
-	
-
-	attack: function() {
-
-		this.attackPower = this.attackPower + countDookuAttack;
-		console.log(this.attackPower);
-	}, 
-
-	getHit: function() {
-
-		this.healthPoints = this.healthPoints + countDookuAttack;
-		console.log(this.healthPoints);
-	}, 
-
-	counterPunch: function() {
-
-		this.counterAttackPower = this.counterAttackPower + countDookuAttack;
-		console.log(this.counterAttackPower);
-	}, 
-
-};
-$(document).on("keypress", function(){
-
-
-obiWan.attack();
-obiWan.getHit();
-obiWan.counterPunch();
-
-
+$(document).on("keypress", function attack() {
+	charOne.healthPoints = charOne.healthPoints + 6;
+	console.log(charOne.healthPoints);
 });
-// var darthMaul = {
-
-// 	HealthPoints: 250
-// 	AttackPower: 5,
-// 	CounterAttackPower: 100,
-// 	Defender: true;
-
-// };
-
-// var quiGon = {
-
-// 	HealthPoints: 300,
-// 	AttackPower: 5,
-// 	CounterAttackPower: 100,
-// 	Defender: true;
-
-// };
-
-// var countDooku = {
-
-// 	HealthPoints: 400,
-// 	AttackPower: 5,
-// 	CounterAttackPower: 100,
-// 	Defender: true;
-
-// };
-
 
 });
 
