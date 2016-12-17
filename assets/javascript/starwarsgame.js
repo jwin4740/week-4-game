@@ -1,3 +1,9 @@
+//global variables
+
+var enemy = true;
+
+
+
 $(document).ready(function() {
 var intro = document.getElementById("theme");
 
@@ -134,6 +140,19 @@ function resetSound() {
 
 var obiwanAttack = 5;
 
+
+// prototype object
+function character(name, healthPoints, attackPower, counterAttackPower, enemy) {
+	this.name = name;
+	this.healthPoints = healthPoints;
+	this.attackPower = attackPower;
+	this.counterAttackPower = counterAttackPower;
+	this.enemy = enemy;
+}
+
+
+
+
 var obiWan = {
 
 	healthPoints: 150,
@@ -161,6 +180,87 @@ var obiWan = {
 
 };
 
+
+var quiGon = {
+
+	healthPoints: 150,
+	attackPower: 5, 
+	counterAttackPower: 100,
+	
+
+	attack: function() {
+
+		this.attackPower = this.attackPower + quiGonAttack;
+		console.log(this.attackPower);
+	}, 
+
+	getHit: function() {
+
+		this.healthPoints = this.healthPoints + quiGonAttack;
+		console.log(this.healthPoints);
+	}, 
+
+	counterPunch: function() {
+
+		this.counterAttackPower = this.counterAttackPower + quiGonAttack;
+		console.log(this.counterAttackPower);
+	}, 
+
+};
+
+var darthMaul = {
+
+	healthPoints: 150,
+	attackPower: 5, 
+	counterAttackPower: 100,
+	
+
+	attack: function() {
+
+		this.attackPower = this.attackPower + darthMaulAttack;
+		console.log(this.attackPower);
+	}, 
+
+	getHit: function() {
+
+		this.healthPoints = this.healthPoints + darthMaulAttack;
+		console.log(this.healthPoints);
+	}, 
+
+	counterPunch: function() {
+
+		this.counterAttackPower = this.counterAttackPower + darthMaulAttack;
+		console.log(this.counterAttackPower);
+	}, 
+
+};
+
+var countDooku = {
+
+	healthPoints: 150,
+	attackPower: 5, 
+	counterAttackPower: 100,
+	
+
+	attack: function() {
+
+		this.attackPower = this.attackPower + countDookuAttack;
+		console.log(this.attackPower);
+	}, 
+
+	getHit: function() {
+
+		this.healthPoints = this.healthPoints + countDookuAttack;
+		console.log(this.healthPoints);
+	}, 
+
+	counterPunch: function() {
+
+		this.counterAttackPower = this.counterAttackPower + countDookuAttack;
+		console.log(this.counterAttackPower);
+	}, 
+
+};
 $(document).on("keypress", function(){
 
 

@@ -17,7 +17,7 @@ body {
 }
 
 #arena{
-    /*display: none;*/
+    display: none;
     overflow: hidden;
     background-image: url(../images/setting.png);
     background-size: cover;
