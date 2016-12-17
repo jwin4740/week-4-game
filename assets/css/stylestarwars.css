@@ -77,7 +77,7 @@ body {
 #chosen{
     float: left;
     margin-left: 25px;
-    border: solid 8px green;
+    border: solid 8px white;
 }
 .player{
     height: 200px;
