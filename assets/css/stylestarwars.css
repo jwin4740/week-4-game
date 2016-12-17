@@ -16,6 +16,10 @@ body {
     margin-left: 10px;
 }
 
+#entrancemaul{
+    height: 300px;
+    width: 500px;
+}
 #arena{
     display: none;
     overflow: hidden;
@@ -65,7 +69,24 @@ body {
 #four {
     clear: both;
 }
-
+#selectPlayer{
+    position: relative;
+    top: 200px;
+    left: 200px;
+}
+#chosen{
+    float: left;
+    margin-left: 25px;
+    border: solid 8px green;
+}
+.player{
+    height: 200px;
+    width: 200px;
+    background-image: cover;
+    cursor: pointer;
+    
+    
+}
 img.gem {
     float: left;
     width: 100px;
