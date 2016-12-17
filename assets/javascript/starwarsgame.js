@@ -5,14 +5,14 @@ var enemy = true;
 
 
 $(document).ready(function() {
-            var intro = document.getElementById("theme");
+            // var intro = document.getElementById("theme");
 
-            function fIntro() {
-                intro.play();
-            }
+            // function fIntro() {
+            //     intro.play();
+            // }
             // fIntro();
 
-            var intro2 = document.getElementById("theme2");
+            var intro2 = $("#theme2")[0];
 
             function fIntro2() {
                 intro2.play();
