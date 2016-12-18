@@ -5,19 +5,19 @@ var enemy = true;
 
 
 $(document).ready(function() {
-    // var intro = $("#theme")[0];
+    var intro = $("#theme")[0];
 
-    // function fIntro() {
-    //     intro.play();
-    // }
+    function fIntro() {
+        intro.play();
+    }
     // fIntro();
 
-    var intro2 = $("#theme2")[0];
+    // var intro2 = $("#theme2")[0];
 
-    function fIntro2() {
-        // intro2.play();
-    }
-    fIntro2();
+    // function fIntro2() {
+    //     intro2.play();
+    // }
+    // fIntro2();
     document.onkeyup = function(event) {
         var userKey = event.key;
         if (userKey === "d") {
@@ -167,11 +167,12 @@ $(document).ready(function() {
         hoverEnlarge("#darth");
         hoverEnlarge("#obi");
         hoverEnlarge("#count");
-        function clickChar(){
-            console.log("vending maching");
-        }
-        clickChar();
+         
+        
     }
 
 selectCharacter();
+$(document).on("click", function(event){
+            $("#qui").css({display: "hidden"})
+        });
 });
