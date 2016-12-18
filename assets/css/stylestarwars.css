@@ -78,7 +78,13 @@ body {
 #chosen{
     float: left;
     margin-left: 25px;
-    border: solid 8px white;
+    border: solid 1px white;
+}
+
+.enemy{
+    float: left;
+    margin-left: 25px;
+    border: solid 8px red;
 }
 .player{
     height: 200px;

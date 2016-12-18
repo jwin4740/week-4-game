@@ -1,6 +1,5 @@
 //global variables
-
-var enemy = true;
+var player;
 
 
 
@@ -153,26 +152,72 @@ $(document).ready(function() {
     var charFour = new Character("CountDooku", 250, 16, 25);
     //--------------GAME STARTS---------------
 
+    // $("#qui").on("click", function(){
+    // alert("The paragraph was clicked.");
+   
+var qui = "#qui";
+    var darth = "#darth";
+    var obi = "#obi";
+    var count = "#count";
     function selectCharacter() {
         function hoverEnlarge(idname) {
             $(idname).on("mouseenter", function() {
                 $(idname).css({ height: "275px", width: "275px" });
-            });
-            $(idname).on("mouseleave", function() {
-                $(idname).css({ height: "200px", width: "200px" });
+                enemy = true;
+                console.log(enemy);
             });
 
+            $(idname).on("mouseleave", function() {
+                $(idname).css({ height: "200px", width: "200px" });
+                enemy = false;
+                console.log(enemy);
+            });
         }
         hoverEnlarge("#qui");
         hoverEnlarge("#darth");
         hoverEnlarge("#obi");
         hoverEnlarge("#count");
-         
-        
     }
 
-selectCharacter();
-$(document).on("click", function(event){
-            $("#qui").css({display: "hidden"})
-        });
+    selectCharacter();
+    
+    $(qui).on("click", function() {
+        $(qui).css({ border: "solid 8px green" });
+
+    });
+    $("#darth").on("click", function() {
+        $("#darth").css({ border: "solid 8px green" });
+    });
+    $("#count").on("click", function() {
+        $("#count").css({ border: "solid 8px green" });
+    });
+    $("#obi").on("click", function() {
+        $("#obi").css({ border: "solid 8px green" });
+    });
+
+    // if (enemy === true)
+    // {
+    //     console.log("yeah it is true");
+    // }
+    // else 
+    // {
+
+    // }
+
+
+
+    //  qui.on("click", clickit(qui) );
+    //  obi.on("click",  );
+    //  darth.on("click",  );
+    //  count.on("click",  );
+
+    //      function clickit(x) {
+    //          $(x).css({ border: "solid 8px green" });
+    //      }
+
+
+
+    // var countdown;
+    // function startCountdown()
+    // var countdown = setInterval(decrement, 1000);
 });
