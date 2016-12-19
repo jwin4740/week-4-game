@@ -12,12 +12,15 @@ body {
     color: black;
 }
 
+p {
+    font-size: 18px;
+}
+
 .container {
     margin-left: 10px;
 }
 
 .row {
-    border: solid 1px black;
     margin-bottom: 5px;
 }
 
@@ -87,12 +90,9 @@ img.gem {
     float: right;
     height: 150px;
     width: 400px;
-    
     margin-right: 300px;
-
 }
 
-.scorecount{
+.scorecount {
     font-size: 24px;
-
 }

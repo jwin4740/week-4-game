@@ -1,4 +1,4 @@
-
+//global variables
 var max;
 var min;
 var redNumber;
@@ -146,9 +146,6 @@ $(".totscore").text(score);
 		}
 			
 		}); 
-	
-	
-	
 });
 
 
@@ -158,12 +155,10 @@ $(".totscore").text(score);
 function getRandom(min, max) {
 	randNumber = Math.floor(Math.random()*(max - min + 1) + min);
 	return randNumber;
-	
 }
 
 function setRandGems () {
 	color = getRandom(1, 12);
 	return color;
-
 }
 

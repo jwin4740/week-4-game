@@ -9,25 +9,25 @@
     <script src="assets/javascript/game.js"></script>
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-   <!--  <link rel="stylesheet" href=assets/css/reset.css>
- -->    <link rel="stylesheet" href="assets/css/style.css">
+    <!--  <link rel="stylesheet" href=assets/css/reset.css>
+ -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <title> JJW Crystal Collector </title>
 </head>
 
 <body>
-<audio  loop alt="www.bensound.com" src="assets/av/bensound.mp3"></audio>
+    <audio loop autoplay alt="www.bensound.com" src="assets/av/bensound.mp3"></audio>
     <div class="container">
-        <div class="row" id="one">
-            Crystals Collector
+        <div style=" text-decoration: underline; font-size: 36px;" class="row" id="one">
+            Crystal Collector
         </div>
         <div class="row" id="two">
-            <div class="col-md-6">
-                <p> Directions </p>
-                <p> * The player will be shown a random number at the start of the game.
+            <div class="col-md-12">
+                <p>
+                    ON SETUP: A random number between 20 and 120, inclusive will be generated. Each crystal will be assigned a random number between 1 and 12, inclusive. The "Current Total" box will be set to 0.
                 </p>
                 <p>
-                    * When the player clicks on a crystal, it will add a specific amount of points to the player's total score. * Your game will hide this amount until the player clicks a crystal. * When they do click one, update the player's score counter.
-                </p>
+                    When you click on a crystal, it will add that value to the "Current Total" box. By clicking on different crystals and deducing their values, you must get your Current Total to equal the generated number. Then you win!! After you win or lose, click the "Play Again" button. </p>
             </div>
         </div>
         <div class="row" id="three">
@@ -42,15 +42,14 @@
             </div>
         </div>
         <div class="row" id="five">
+            <button style="width: 200px; border-radius: 5px; background-color: green; font-size: 20px; float: right; padding: 15px; margin-left: 25px;" id="buttonreset">PLAY AGAIN</button>
             <h3 style="padding: 2px;text-align: left; text-decoration: underline; font-weight: 700;"> Current Total</h3>
             <div class="scorebox">
                 <p class="scorecount"> &nbsp; TOTAL WINS: &nbsp; <span id="wins"></span></p>
                 <p class="scorecount"> &nbsp; TOTAL LOSSES: &nbsp;<span id="loss"></span></p>
-            <button style="margin-left: 25px;" id="buttonreset">PLAY AGAIN</button>
             </div>
             <div class="totscore">0
             </div>
-            
         </div>
     </div>
 </body>
