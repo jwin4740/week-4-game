@@ -74,16 +74,25 @@ img.gem {
 
 .totscore {
     float: left;
-    height: 100px;
-    width: 150px;
+    height: 75px;
+    width: 100px;
+    border: dotted 2px black;
     text-align: center;
+    margin-left: 25px;
     margin-right: 10px;
     font-size: 36px;
 }
 
 .scorebox {
-    float: left;
-    height: 100px;
-    width: 150px;
+    float: right;
+    height: 150px;
+    width: 400px;
     border: solid 4px black;
+    margin-right: 300px;
+
+}
+
+.scorecount{
+    font-size: 24px;
+
 }

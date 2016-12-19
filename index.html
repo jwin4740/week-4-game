@@ -15,6 +15,7 @@
 </head>
 
 <body>
+<audio  loop alt="www.bensound.com" src="assets/av/bensound.mp3"></audio>
     <div class="container">
         <div class="row" id="one">
             Crystals Collector
@@ -42,12 +43,14 @@
         </div>
         <div class="row" id="five">
             <h3 style="padding: 2px;text-align: left; text-decoration: underline; font-weight: 700;"> Current Total</h3>
-            <div class="totscore">
-            </div>
             <div class="scorebox">
-                <h4> &nbsp; WINS: &nbsp; <span id="wins"></span></h4>
-                <h4> &nbsp; LOSSES: &nbsp;<span id="wins"></span></h4>
+                <p class="scorecount"> &nbsp; TOTAL WINS: &nbsp; <span id="wins"></span></p>
+                <p class="scorecount"> &nbsp; TOTAL LOSSES: &nbsp;<span id="loss"></span></p>
+            <button id="buttonreset">PLAY AGAIN</button>
             </div>
+            <div class="totscore">0
+            </div>
+            
         </div>
     </div>
 </body>
