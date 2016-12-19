@@ -70,21 +70,39 @@ body {
 #four {
     clear: both;
 }
-#selectPlayer{
-    position: relative;
-    top: 200px;
-    left: 200px;
-}
+
 #chosen{
-    float: left;
+    display: inline-block;
     margin-left: 25px;
-    border: solid 1px white;
+    position: relative;
 }
+#selected{
+    position: absolute;
+    border: solid 5px white;
+    height: 300px;
+    width: 300px;
+    top: 200px;
+    left: 500px;
+
+
+}
+
 
 .enemy{
     float: left;
     margin-left: 25px;
     border: solid 8px red;
+}
+
+.clicked{
+    position: absolute;
+    border: solid 8px red;
+    height: 300px;
+    width: 300px;
+    top: 200px;
+    left: 500px;
+   
+
 }
 .player{
     height: 200px;

@@ -15,11 +15,6 @@
 </head>
 
 <body>
-<img class="sparkle" id="sparkle1" src="assets/images/whitesparkle.png">
-<img class="sparkle" id="sparkle2" src="assets/images/whitesparkle.png">
-<img class="sparkle" id="sparkle3" src="assets/images/whitesparkle.png">
-<img class="sparkle" id="sparkle4" src="assets/images/whitesparkle.png">
-
     <div class="container">
         <div class="row" id="one">
             Crystals Collector
@@ -32,29 +27,26 @@
                 <p>
                     * When the player clicks on a crystal, it will add a specific amount of points to the player's total score. * Your game will hide this amount until the player clicks a crystal. * When they do click one, update the player's score counter.
                 </p>
-               
             </div>
         </div>
         <div class="row" id="three">
+            <h3 style="font-weight: 700; text-decoration: underline; ">Random Number</h3>
             <div id="genNumber">
             </div>
-        </div>
-        
-        <div class="row" id="four">
-            <img class="gem blues" id="blue"
-            alt="colored-gem" src="assets/images/blue.png">
-            <img class="gem greens" id="green" alt="colored-gem" src="assets/images/green.png">
-            <img class="gem reds" id="red" alt="colored-gem" src="assets/images/red.png">
-            <img class="gem purples" id="purple" alt="colored-gem" src="assets/images/purple.png">
+            <div id="crystals">
+                <img class="gem blues" id="blue" alt="colored-gem" src="assets/images/blue.png">
+                <img class="gem greens" id="green" alt="colored-gem" src="assets/images/green.png">
+                <img class="gem reds" id="red" alt="colored-gem" src="assets/images/red.png">
+                <img class="gem purples" id="purple" alt="colored-gem" src="assets/images/purple.png">
+            </div>
         </div>
         <div class="row" id="five">
-            <h4 style="padding: 2px;text-align: center; text-decoration: underline;"> Your total score is</h4>
+            <h3 style="padding: 2px;text-align: left; text-decoration: underline; font-weight: 700;"> Current Total</h3>
             <div class="totscore">
-                
             </div>
             <div class="scorebox">
                 <h4> &nbsp; WINS: &nbsp; <span id="wins"></span></h4>
-                <h4> &nbsp; LOSSES: &nbsp;<span id="wins"></span></h4>   
+                <h4> &nbsp; LOSSES: &nbsp;<span id="wins"></span></h4>
             </div>
         </div>
     </div>
